@@ -3,22 +3,26 @@ nav {
   height: 25%;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 
   ul {
     margin: 0;
     display: flex;
-    align-self: flex-start;
     opacity: 1;
     padding-top: .5%;
     padding-bottom: .5%;
     li {
       list-style: none;
+      &:first-child {
+        position: absolute;
+        left: 10%;
+      }
       a {
         margin: 0;
         padding: .5em;
         text-decoration: none;
         color: white;
-        font-size: 1.8em;
+        font-size: 1.6em;
         text-transform: uppercase;
       &:hover {
         background-color: #EB8C04;
