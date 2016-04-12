@@ -20,6 +20,8 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.trailApiKey = process.env.trailKey;
+    ENV.weatherApiKey = process.env.weatherKey;
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
