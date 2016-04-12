@@ -1,19 +1,21 @@
 nav {
-  background-color: black;
-  height: 5vh;
-  opacity: .8;
+  background-color: darken(#778D3A, 25%);
+  height: 25%;
+  display: flex;
+  justify-content: flex-end;
 
   ul {
-    margin-top: 0;
+    margin: 0;
     display: flex;
-    justify-content: flex-end;
-    padding-top: 1%;
+    align-self: flex-start;
     opacity: 1;
-
+    padding-top: .5%;
+    padding-bottom: .5%;
     li {
       list-style: none;
-      opacity: 1;
       a {
+        margin: 0;
+        padding: .5em;
         text-decoration: none;
         color: white;
         font-size: 1.8em;

@@ -8,9 +8,9 @@
   }
 }
 
-@mixin fontBasics($font-family, $color: null, $font-size: null, $background-color:  null) {
-  font-family: $font-family;
-  color: $color;
-  font-size: $font-size;
-  background-color: $background-color;
+@mixin backgroundImg($bckgrndImg, $backPos: null, $backRep: null, $backSize: null) {
+  background-image: url($bckgrndImg);
+  background-position: $backPos;
+  background-repeat: $backRep;
+  background-size: $backSize;
 }
