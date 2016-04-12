@@ -20,6 +20,11 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV['g-map'] = {
+      libraries: ['places', 'geometry'],
+      key: 'AIzaSyAvT6EAqWu-ooOiS8ymMzGTHqfCwkBtKaE',
+      protocol: 'https'
+    }
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
