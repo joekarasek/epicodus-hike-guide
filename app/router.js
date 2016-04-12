@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('weather');
   this.route('gmaps');
+  this.route('trails');
 });
 
 export default Router;

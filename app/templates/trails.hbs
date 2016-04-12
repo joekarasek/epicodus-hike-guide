@@ -1,0 +1,12 @@
+<ul>
+  {{#each model.places as |place|}}
+    <h3>{{place.name}}</h3>
+    <ul>
+      <li>Description: {{place.description}}</li>
+      <li>Directions: {{place.directions}}</li>
+      <li>lat: {{place.lat}} long: {{place.lon}}</li>
+    </ul>
+    {{location-tile place=place}}
+  {{/each}}
+</ul>
+{{model}}
