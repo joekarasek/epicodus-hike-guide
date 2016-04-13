@@ -1,5 +1,5 @@
 echo "Switch to gh-pages branch"
-git checkout -b gh-pages
+git checkout gh-pages
 git merge master
 
 echo "Clean up"
