@@ -12,8 +12,13 @@ html, body {
   font-family: 'Economica', sans-serif;
 }
 .warm {
-  color: red;
+               background: linear-gradient(330deg, #CC2200 0%, #E24800 25%, #FF7701 50%, #FF9C00 75%, #CC2200 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 .cool {
-  color: blue;
+             background: linear-gradient(330deg, #4B5354 0%, #A0CFE6 25%, #2A60A1 50%, #E9EDEF 75%, #2A60A1  100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
