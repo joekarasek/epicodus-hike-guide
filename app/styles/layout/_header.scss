@@ -1,8 +1,35 @@
 header {
+  margin: 0;
+  position: relative;
+  background-color: darken(orange, 25%);
 
   video {
-  margin-bottom: -6px;
-  opacity: .7;
-  width: 100%;
+    opacity: .8;
+    margin-bottom: -6px;
+    width: 100%;
+    z-index: -1;
+    max-height: 100vh;
+  }
+  .headingWords {
+    position: absolute;
+    width: 100%;
+    bottom: 14em;
+
+    h1 {
+      margin: auto;
+      text-align: center;
+      font-family: "neverStop";
+      font-size: 17em;
+      color: white;
+      text-shadow: 2px 2px 4px darken(orange, 25%);
+    }
+    p {
+      margin: auto;
+      text-align: center;
+      font-family: "neverStop";
+      font-size: 5em;
+      color: white;
+      text-shadow:  2px 2px 4px darken(orange, 25%);
+    }
   }
 }
