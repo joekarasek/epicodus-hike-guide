@@ -18,6 +18,9 @@ nav {
       &:first-child {
         position: absolute;
         left: 5%;
+        @media (max-width: 320px) {
+          display: none;
+        }
       }
       a {
         margin: 0;
