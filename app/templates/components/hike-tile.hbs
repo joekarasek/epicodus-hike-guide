@@ -9,14 +9,4 @@
 
 
 <!-- TODO below needs separate component for modal information with dynamic linking -->
-
-<div id="openModal" class="modalDialog">
-    <div>	<a href="#close" title="Close" class="close">X</a>
-
-      <h1>{{place.name}}</h1>
-      <h2>{{place.temp}}</h2>
-      <p>{{place.description}}</p>
-
-      <p>{{location-tile place=place}}</p>
-    </div>
-</div>
+  {{hike-modal place=place index=index}}
