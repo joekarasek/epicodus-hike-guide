@@ -5,7 +5,7 @@ $large-screen: em(860) !default;
   $action-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $footer-background: #644C18;
+  $footer-background: #485620;
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
@@ -55,7 +55,7 @@ $large-screen: em(860) !default;
   ul li a {
     color: $footer-link-color;
     text-decoration: none;
-    
+
 
     &:focus,
     &:hover {
