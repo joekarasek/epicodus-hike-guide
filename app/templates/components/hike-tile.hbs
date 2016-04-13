@@ -1,9 +1,8 @@
-<a href="javascript:void(0)" class="grid-item">
   <!-- TODO We could build as helper that would check for an image (in the activities array from the hike json) to use as the background, or use a stock image if one is not available -->
   <!-- TODO we want to replace the icon below with an icon that reflects some weather data. A helper would work well here, it could check for rain, cloud cover, and wind, and decide which icon to show -->
   <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
+  {{index}}
   <h1>{{place.name}}</h1>
   <!-- TODO we need a helper to display the temperature correctly (not kelvin). It would be fun to set the color of the text to reflect the temperature (colder is bluer, warmer is redder) -->
   <h2>{{place.temp}}</h2>
   <p>{{place.description}}</p>
-</a>
