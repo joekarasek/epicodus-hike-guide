@@ -27,13 +27,15 @@
 </div>
 
 <div id="destination" class="mainContent">
+
   <h1><center>Your Journey Awaits</center></h1>
   <div class="grid-items">
-  <a href="javascript:void(0)" class="grid-item">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
-    <h1>Grid Item</h1>
-    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-  </a>
+
+    <!-- TODO We are generating the location tiles here, but we want them to not be all the same (see the comment out code below). Can we find a way to get ember to generate more dynamic tiles? The ember docs has info on customizing components that will help with this -->
+  {{#each model.places as |place|}}
+    {{hike-tile place=place}}
+  {{/each}}
+<!--
   <a href="javascript:void(0)" class="grid-item grid-item-big grid-item-image">
     <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png" alt="">
     <h1>Grid Item With an Image</h1>
@@ -63,9 +65,9 @@
     <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
     <h1>Item</h1>
     <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-  </a>
+  </a> -->
 </div>
-<div class="grid-items">
+<!-- <div class="grid-items">
 <a href="javascript:void(0)" class="grid-item">
   <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
   <h1>Grid Item</h1>
@@ -103,8 +105,8 @@
 </a>
 
 
-</div>
-<div class="grid-items">
+</div> -->
+<!-- <div class="grid-items">
 <a href="javascript:void(0)" class="grid-item">
   <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
   <h1>Grid Item</h1>
@@ -142,7 +144,7 @@
 </a>
 
 
-</div>
+</div> -->
 
 
 </div>
