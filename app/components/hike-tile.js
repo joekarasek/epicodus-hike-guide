@@ -4,7 +4,9 @@ export default Ember.Component.extend({
 
   tagName: 'a',
   attributeBindings: ['href'],
-  href: '#openModal',
+  href: Ember.computed('index', function() {
+      return "#openModal"+this.get('index');
+    }),
   classNames: ['grid-item'],
   classNameBindings: ['gridItemBig', 'gridItemImage'],
   gridItemBig: Ember.computed('index', function() {

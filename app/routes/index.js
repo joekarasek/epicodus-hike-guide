@@ -20,8 +20,6 @@ export default Ember.Route.extend({
         promiseArray.push($.get('http://api.openweathermap.org/data/2.5/weather?lat='+ place.lat +'&lon=' + place.lon + '&appid=' + weatherKey, function(response) {
           // Add code here to write weather data to the result (hikes) json
           // TODO we need to decide what weather data to pull in beyond the temperature (or just grab it all)
-          result.places[index].temp = response.main.temp;
-          result.places[index].icon = response.weather[0].main;
           result.places[index].weather = response;
         }));
       });
