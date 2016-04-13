@@ -1,0 +1,16 @@
+@mixin fontFace($family, $file) {
+
+  @font-face {
+    font-family: $family;
+
+    src: url('#{$path-font}/#{$file}.ttf');
+    src: url('#{$path-font}/#{$file}.ttf') format('truetype');
+  }
+}
+
+@mixin backgroundImg($bckgrndImg, $backPos: null, $backRep: null, $backSize: null) {
+  background-image: url($bckgrndImg);
+  background-position: $backPos;
+  background-repeat: $backRep;
+  background-size: $backSize;
+}
