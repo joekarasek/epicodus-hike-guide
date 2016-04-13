@@ -47,7 +47,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/epicodus-hike-guide/dist';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
