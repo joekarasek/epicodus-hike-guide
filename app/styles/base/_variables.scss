@@ -6,6 +6,17 @@ $footer-color: white;
 $footer-link-color: transparentize($footer-color, 0.6);
 $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
+// Search Bar
+/////////
+$base-spacing: 1.5em !default;
+$base-border-color: gainsboro !default;
+$base-line-height: 1.5em !default;
+/////////
+
+$search-bar-border-color: $base-border-color;
+$search-bar-border: 1px solid $search-bar-border-color;
+$search-bar-background: lighten($search-bar-border-color, 10%);
+
 // Functional Colors //
 
 
