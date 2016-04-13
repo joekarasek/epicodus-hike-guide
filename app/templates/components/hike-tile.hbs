@@ -1,4 +1,4 @@
-<a href="javascript:void(0)" class="grid-item">
+<a href="#openModal" class="grid-item">
   <!-- TODO We could build as helper that would check for an image (in the activities array from the hike json) to use as the background, or use a stock image if one is not available -->
   <!-- TODO we want to replace the icon below with an icon that reflects some weather data. A helper would work well here, it could check for rain, cloud cover, and wind, and decide which icon to show -->
   <img src="/assets/img/sunny.png" alt="sun icon">
@@ -7,3 +7,12 @@
   <h2>{{place.temp}}</h2>
   <p>{{place.description}}</p>
 </a>
+
+<div id="openModal" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+      <h1>{{place.name}}</h1>
+      <h2>{{place.temp}}</h2>
+      <p>{{place.description}}</p>
+    </div>
+</div>

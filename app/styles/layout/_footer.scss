@@ -59,7 +59,7 @@ $large-screen: em(860) !default;
 
     &:focus,
     &:hover {
-      color: transparentize($footer-color, 0);
+      color: #EB8C04;
     }
   }
 
@@ -112,9 +112,6 @@ $large-screen: em(860) !default;
   margin: 0 auto -4em;
 }
 
-// html, body {
-//  height: 100%;
-// }
 
 .wrapper-for-content-outside-of-footer::after {
   content: "";
@@ -128,14 +125,3 @@ $large-screen: em(860) !default;
     height: 4em;
   }
 }
-
-// footer {
-//   position: static;
-//   left: 0;
-//   bottom: 0;
-//   height: 100px;
-//   width: 100%;
-//   background-color: #2B3315;
-//   color: white;
-//   text-align: center;
-// }
