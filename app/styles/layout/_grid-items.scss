@@ -16,7 +16,25 @@
     #8F5503,
     #778D3A,
     #485620,
-    #C4D07A;
+    #C4D07A,
+    #F5CB38,
+    #DD8D22,
+    #CE6D22,
+    #8F5503,
+    #778D3A,
+    #485620,
+    #C4D07A,
+    #F5CB38,
+    #DD8D22,
+    #CE6D22,
+    #8F5503,
+    #778D3A,
+    #485620,
+    #C4D07A,
+    #F5CB38,
+    #DD8D22,
+    #CE6D22,
+    #8F5503;
   $grid-item-border-size: 9px;
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
@@ -75,6 +93,7 @@
     color: $grid-item-color;
     font-size: 1.3em;
     margin-bottom: 0.4em;
+    text-shadow: 1px 1px 4px black;
   }
 
   .grid-item p {

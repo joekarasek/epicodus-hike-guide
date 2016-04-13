@@ -1,6 +1,5 @@
 .modalDialog {
     position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
@@ -18,18 +17,21 @@
     pointer-events: auto;
 }
 .modalDialog > div {
-    width: 400px;
+    width: 70%;
+    height: auto;
     position: relative;
+    top: 15vh;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
+    background: #CE6D22;
+    font-size: 1.3em;
+    background: -moz-linear-gradient(#F5CB38, #8F5503);
+    background: -webkit-linear-gradient(#F5CB38, #8F5503);
+    background: -o-linear-gradient(#CE6D22, #8F5503);
 }
 .close {
-    background: #606061;
+    background: #8F5503;
     color: #FFFFFF;
     line-height: 25px;
     position: absolute;
@@ -47,5 +49,5 @@
     box-shadow: 1px 1px 3px #000;
 }
 .close:hover {
-    background: #00d9ff;
+    background: #CE6D22;
 }

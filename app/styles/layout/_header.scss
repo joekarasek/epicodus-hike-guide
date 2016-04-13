@@ -9,6 +9,9 @@ header {
     width: 100%;
     z-index: -1;
     max-height: 100vh;
+    @media (max-width: 716px) {
+      display: none;
+    }
   }
   .headingWords {
     position: absolute;
