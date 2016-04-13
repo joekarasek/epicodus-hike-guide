@@ -11,7 +11,8 @@ ember build --environment production
 
 echo "Add dist to commit and push it to GitHub"
 git add dist --force
-git commit -am "deploy"
+git add .
+git commit -m "deploy"
 git push origin gh-pages
 
 echo "Switch back to master branch"
