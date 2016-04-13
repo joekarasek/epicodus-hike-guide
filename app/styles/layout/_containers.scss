@@ -9,6 +9,7 @@
 .containingHike {
   max-width: 100%;
   display: flex;
+  justify-content: center;
   height: 25vh;
   .hike1 {
     width: 25vw;
@@ -22,12 +23,18 @@
     width: 25vw;
     @include backgroundImg("/assets/img/sitting.jpg", $backPos: center, $backRep: no-repeat, $backSize: cover);
   }
+  @media (max-width: 716px) {
+    display: none;
+  }
 }
 .shinyContainer {
   margin-top: 5%;
   display: flex;
   justify-content: space-around;
   width: 100%;
+  @media (max-width: 716px) {
+    flex-direction: column;
+  }
   .shiny1 {
     text-align: center;
     flex: 1;
