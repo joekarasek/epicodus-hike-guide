@@ -1,9 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+
   tagName: 'a',
   attributeBindings: ['href'],
-  href: '#openModal',
+  href: Ember.computed('index', function() {
+      return "#openModal"+this.get('index');
+    }),
   classNames: ['grid-item'],
   classNameBindings: ['gridItemBig', 'gridItemImage'],
   gridItemBig: Ember.computed('index', function() {
@@ -15,4 +18,5 @@ export default Ember.Component.extend({
     var isSecondOfSeven = ((this.get('index') % 7) - 1 === 0);
     return isSecondOfSeven;
   })
+
 });

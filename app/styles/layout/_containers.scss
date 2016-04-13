@@ -1,9 +1,6 @@
 .overLord {
   margin-top: 8%;
   @include outer-container;
-  // border: 4px double black;
-  // padding: 1%;
-  // border-radius: 1em;
 }
 
 .containingHike {
@@ -54,4 +51,10 @@
 .gmaps {
   display: flex;
   justify-content: center;
+
+  .g-map-canvas {
+    width: 45vw;
+    height: 30vh;
+    border-radius: 1em;
+  }
 }

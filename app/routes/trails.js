@@ -16,6 +16,7 @@ export default Ember.Route.extend({
       result.places.forEach(function(place, index) {
         promiseArray.push($.get('http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139' + '&appid=0bc1f375eec970019c6d88bce9494c4c', function(response) {
           result.places[index].temp = response.main.temp;
+          result.places[index].icon = response.weather.main;
         }));
       });
       return Promise.all(promiseArray).then(function(values) {
