@@ -4,5 +4,5 @@
   {{index}}
   <h1>{{place.name}}</h1>
   <!-- TODO we need a helper to display the temperature correctly (not kelvin). It would be fun to set the color of the text to reflect the temperature (colder is bluer, warmer is redder) -->
-  <h2>{{place.temp}}</h2>
+  <h2>{{ temp-convert place.temp}}</h2>
   <p>{{place.description}}</p>
