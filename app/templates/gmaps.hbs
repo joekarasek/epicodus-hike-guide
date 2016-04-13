@@ -1,40 +1,5 @@
 <h2>What up?  Here's a hard coded map.</h2>
 
-<form>
-  <div class="form-group">
-    <label for="latitude">Latitude</label>
-    {{input value=latitude id="latitude"}}
-  </div>
 
-  <div class="form-group">
-    <label for="longitude">Longitude</label>
-    {{input value=longitude id="longitude"}}
-  </div>
 
-<button {{action 'search'}}>Look up</button>
-</form>
-
-{{#g-map lat=45.5897 lng=-122.730514 zoom=12 as |context|}}
-
-  {{#g-map-marker context group="trailhead" lat=45.5897 lng=-122.730514 as |markerContext|}}
-    {{#g-map-infowindow markerContext}}
-      <h2>Trailhead of Joy and Wonder</h2>
-    {{/g-map-infowindow}}
-  {{/g-map-marker}}
-  <!-- {{#g-map-marker context group="cats" lat=37.7433 lng=-122.4467 as |markerContext|}}
-    {{#g-map-infowindow markerContext}}
-      <h2>Cat #2</h2>
-    {{/g-map-infowindow}}
-  {{/g-map-marker}} -->
-
-  <!-- {{#g-map-marker context group="dogs" lat=37.7533 lng=-122.4167 as |markerContext|}}
-    {{#g-map-infowindow markerContext}}
-      <h2>Dog #1</h2>
-    {{/g-map-infowindow}}
-  {{/g-map-marker}}
-  {{#g-map-marker context group="dogs" lat=37.7733 lng=-122.4467 as |markerContext|}}
-    {{#g-map-infowindow markerContext}}
-      <h2>Dog #2</h2>
-    {{/g-map-infowindow}}
-  {{/g-map-marker}}
-{{/g-map}} -->
+{{map-display}}
