@@ -77,7 +77,7 @@
   @include displayForm(inline-block, $position: absolute, $left: 44%);
   @extend %center;
   bottom: 38%;
-  background: #EB8C04;
+  background: lighten(#EB8C04, 15%);
   text-decoration: none;
   color: white;
   padding: 15px 0;
@@ -93,7 +93,7 @@
     content: '';
     width: 0;
     height: 0;
-    border-top: 10px solid #EB8C04;
+    border-top: 10px solid lighten(#EB8C04, 15%);
     border-right: 10px solid transparent;
     border-bottom: 10 solid transparent;
     border-left: 10px solid transparent;
