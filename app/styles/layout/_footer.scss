@@ -5,7 +5,7 @@ $large-screen: em(860) !default;
   $action-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $footer-background: #644C18;
+  $footer-background: #485620;
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
@@ -55,11 +55,11 @@ $large-screen: em(860) !default;
   ul li a {
     color: $footer-link-color;
     text-decoration: none;
-    
+
 
     &:focus,
     &:hover {
-      color: transparentize($footer-color, 0);
+      color: #EB8C04;
     }
   }
 
@@ -112,9 +112,6 @@ $large-screen: em(860) !default;
   margin: 0 auto -4em;
 }
 
-// html, body {
-//  height: 100%;
-// }
 
 .wrapper-for-content-outside-of-footer::after {
   content: "";
@@ -128,14 +125,3 @@ $large-screen: em(860) !default;
     height: 4em;
   }
 }
-
-// footer {
-//   position: static;
-//   left: 0;
-//   bottom: 0;
-//   height: 100px;
-//   width: 100%;
-//   background-color: #2B3315;
-//   color: white;
-//   text-align: center;
-// }
