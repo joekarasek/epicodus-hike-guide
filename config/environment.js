@@ -20,6 +20,8 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.trailApi = process.env.trailApiKey;
+    ENV.weatherApi = process.env.weatherApiKey;
     ENV['g-map'] = {
       libraries: ['places', 'geometry'],
       key: 'AIzaSyAvT6EAqWu-ooOiS8ymMzGTHqfCwkBtKaE',
