@@ -1,5 +1,10 @@
 // Colors //
-
+$base-spacing: 1.5em !default;
+$action-color: #477DCA !default;
+$footer-background: #485620;
+$footer-color: white;
+$footer-link-color: transparentize($footer-color, 0.6);
+$footer-disclaimer-color: transparentize($footer-color, 0.6);
 
 // Functional Colors //
 
@@ -9,3 +14,47 @@
 
 // Asset Paths //
 $path-font: "../assets/fonts";
+
+// Resposive
+$medium-screen: em(640) !default;
+$large-screen: em(860) !default;
+
+
+//Grid
+$action-color: #477DCA !default;
+$base-background-color: white !default;
+$medium-screen: em(640) !default;
+$large-screen: em(860) !default;
+$grid-items-background: $base-background-color;
+$grid-item-background: desaturate($action-color, 30%);
+$grid-item-colors:
+  #F5CB38,
+  #DD8D22,
+  #CE6D22,
+  #8F5503,
+  #778D3A,
+  #485620,
+  #C4D07A,
+  #F5CB38,
+  #DD8D22,
+  #CE6D22,
+  #8F5503,
+  #778D3A,
+  #485620,
+  #C4D07A,
+  #F5CB38,
+  #DD8D22,
+  #CE6D22,
+  #8F5503,
+  #778D3A,
+  #485620,
+  #C4D07A,
+  #F5CB38,
+  #DD8D22,
+  #CE6D22,
+  #8F5503;
+$grid-item-border-size: 9px;
+$grid-item-columns: 4;
+$grid-item-big-columns: 8;
+$grid-item-color: white;
+$grid-item-height: 14em;
