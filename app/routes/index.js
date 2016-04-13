@@ -5,7 +5,7 @@ export default Ember.Route.extend({
   model() {
     var trailKey = config.trailApi;
     return $.ajax({
-      url: "https://trailapi-trailapi.p.mashape.com/?limit=25&q[activities_activity_type_name_eq]=hiking&q[city_cont]=Yellowstone&q[state_cont]=Montana&radius=50",
+      url: "https://trailapi-trailapi.p.mashape.com/?limit=25&q[activities_activity_type_name_eq]=hiking&q[city_cont]=Phoenix&q[state_cont]=Arizona&radius=50",
       dataType: 'json',
       headers: {
         "X-Mashape-Key": trailKey,
