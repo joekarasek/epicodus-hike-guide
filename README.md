@@ -40,10 +40,11 @@ You will need the following things properly installed on your computer.
 
 ## Additional Commands
 
-* `ember test`
-* `ember test --server`
-* `ember build` (development)
-* `ember build --environment production` (production)
+* `ember test`  
+* `ember test --server`  
+* `ember build` (development)  
+* `ember build --environment production` (production)  
+
 ***
 ## Further Reading / Useful Links
 
