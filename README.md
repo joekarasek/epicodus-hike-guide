@@ -15,7 +15,8 @@ You will need the following things properly installed on your computer.
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* [PhantomJS](http://phantomjs.org/)  
+
 ***
 ## Installation
 1. In your terminal, change directories to your desktop using `cd desktop`
@@ -34,7 +35,7 @@ You will need the following things properly installed on your computer.
 ***
 ## Starting the Server
 * `source .env && ember s`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your app at [http://localhost:4200](http://localhost:4200).  
 ***
 
 ## Additional Commands
@@ -50,7 +51,8 @@ You will need the following things properly installed on your computer.
 * [ember-cli](http://ember-cli.com/)
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)  
+
 ***
 ## License
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)]()  
