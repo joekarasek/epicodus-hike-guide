@@ -33,19 +33,13 @@
     flex-direction: column;
   }
   .shiny1 {
-    text-align: center;
-    flex: 1;
-    padding: 10px;
+    @extend %shiny;
   }
   .shiny2 {
-    text-align: center;
-    flex: 1;
-    padding: 10px;
+    @extend %shiny;
   }
   .shiny3 {
-    text-align: center;
-    flex: 1;
-    padding: 10px;
+    @extend %shiny;
   }
 }
 .gmaps {
