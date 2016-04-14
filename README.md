@@ -1,15 +1,24 @@
 # H?KE [![TeamCity CodeBetter](https://img.shields.io/teamcity/codebetter/bt428.svg?maxAge=2592000)]()
-Created by:  
-[Joe Karasek](https://github.com/joekarasek)  
-[Sara Wagner](https://github.com/swagner23q)  
-[Josh Overly](https://github.com/jos-h20)  
-[Ben Ronda](https://github.com/ben-ronda)
-***
-H?KE is a web application that provides all the basic information you need for hiking trails around the Portland area. It utilizes trailAPI and Open Weather Map API to get data such as latitude/longitude, hike description, hike length, temperature and what the current weather condition is such as rainy, clear, cloudy, etc.
-***
-## Prerequisites
 
-You will need the following things properly installed on your computer.
+## A Weather Aware Guide to Portland, OR Hikes _4.14.2016_
+#### Created by:  [Joe Karasek](https://github.com/joekarasek), [Sara Wagner](https://github.com/swagner23q), [Josh Overly](https://github.com/jos-h20), and [Ben Ronda](https://github.com/ben-ronda)
+***
+## Description
+
+H?KE is a web application that provides basic information on hiking trails around the Portland area, including the current weather.
+
+This project was put together as a three day capstone project to the Level 2 Javascript class at Epicodus, a vocational school for aspiring programmers. This app is built on the Ember.js framework and utilizes three APIs (trailsApi,Open Weather Maps API, and Google Maps API) to generate information for user.
+
+### Technologies Used
+* Javascript
+* Node.js
+* Ember.js
+* Sass
+
+***
+## Installation and Setup
+
+### Prerequisites
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
@@ -17,34 +26,24 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)  
 
-***
-## Installation
-1. In your terminal, change directories to your desktop using `cd desktop`
-2. Run the following command: `git clone <repository-url>`
-3. Use `cd epicodus-hike-guide` to change into the project directory
-4. `npm install`
-5. `bower install`
-6. While in the terminal use the command `touch .env` This will create a file for storing api keys you will obtain.
-7. To obtain a TrailAPI key visit https://market.mashape.com/trailapi/trailapi. You may have to signup but dont worry, it's free!
-8. Visit http://openweathermap.org/ and signup to get a weather API key (also free).
-9. Once you have both keys return the the .env file created in step 6 and insert the following  
-`export trailApiKey="TRAIL API KEY HERE"`  
-`export weatherApiKey="WEATHER API KEY HERE"`
-10. You are now ready to start the Server!
+### Installation
 
-***
-## Starting the Server
-* `source .env && ember s`
-* Visit your app at [http://localhost:4200](http://localhost:4200).  
+* This application requires two [API keys](https://en.wikipedia.org/wiki/Application_programming_interface_key) to work. You will need to obtain these keys and place them in the file `/.env`.
+  * To obtain a TrailAPI key visit https://market.mashape.com/trailapi/trailapi. You may have to signup but dont worry, it's free!
+  * Visit http://openweathermap.org/ and signup to get a weather API key (also free).
+  * Your .env file will need to look like this...
 
-***
 
-## Additional Commands
+    export trailApiKey="TRAIL API KEY HERE"
+    export weatherApiKey="WEATHER API KEY HERE"
 
-* `ember test`  
-* `ember test --server`  
-* `ember build` (development)  
-* `ember build --environment production` (production)  
+
+* Install dependencies.
+  * `npm install`
+  * `bower install`
+* Launch a local server through ember.
+  * `source .env && ember s`
+* View the app at [http://localhost:4200](http://localhost:4200).  
 
 ***
 ## Further Reading / Useful Links
