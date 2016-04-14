@@ -1,12 +1,12 @@
 .headerButton {
   @include displayForm(inline-block, $position: absolute, $left: 44%);
   @extend %center;
-  bottom: -20%;
+  bottom: -25%;
   background: lighten(#EB8C04, 15%);
   text-decoration: none;
   color: white;
   padding: 15px 0;
-  width: 200px;
+  width: 291px;
   font-weight: bold;
   border-radius: .4em;
   @media (max-width: 1060px) {
