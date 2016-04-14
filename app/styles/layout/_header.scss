@@ -2,14 +2,13 @@ header {
   margin: 0;
   position: relative;
   background-color: darken(orange, 25%);
-
   video {
     opacity: .8;
     margin-bottom: -6px;
     width: 100%;
     z-index: -1;
     max-height: 100vh;
-    @media (max-width: 716px) {
+    @media (max-width: 320px) {
       display: none;
     }
   }
@@ -19,11 +18,9 @@ header {
     bottom: 14em;
 
     h1 {
+      @include fontBasics("neverStop", $color: white, $font-size: 17em);
+      @extend %center;
       margin: auto;
-      text-align: center;
-      font-family: "neverStop";
-      font-size: 17em;
-      color: white;
       text-shadow: 2px 2px 4px darken(orange, 25%);
       @media (max-width: 1060px) {
         font-size: 8em;
@@ -33,11 +30,9 @@ header {
       }
     }
     p {
+      @include fontBasics("neverStop", $color: white, $font-size: 5em);
+      @extend %center;
       margin: auto;
-      text-align: center;
-      font-family: "neverStop";
-      font-size: 5em;
-      color: white;
       text-shadow:  2px 2px 4px darken(orange, 25%);
       @media (max-width: 1060px) {
         font-size: 2em;

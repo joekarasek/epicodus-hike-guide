@@ -3,7 +3,7 @@ import Ember from 'ember';
 export function weatherIcon(params/*, hash*/) {
   var place = params[0];
 
-  if (place.weather.weather[0].main === "Rain") {
+  if (place.weather.weather[0].main === "Rain" || place.weather.weather[0].main === "Drizzle" || place.weather.weather[0].main === "Snow") {
     return Ember.String.htmlSafe('<span><img src="/assets/img/rain.png" alt="rain-icon"></span>');
   } else if (place.weather.weather[0].main === "Clouds") {
     return Ember.String.htmlSafe('<span><img src="/assets/img/cloudy.png" alt="cloudy-icon"></span>');

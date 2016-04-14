@@ -14,3 +14,15 @@
   background-repeat: $backRep;
   background-size: $backSize;
 }
+@mixin fontBasics($font-family, $color: null, $font-size: null, $background-color:  null) {
+  font-family: $font-family;
+  color: $color;
+  font-size: $font-size;
+  background-color: $background-color;
+}
+@mixin displayForm($display, $position: null, $top: null, $left: null) {
+  display: $display;
+  position: $position;
+  top: $top;
+  left: $left;
+}

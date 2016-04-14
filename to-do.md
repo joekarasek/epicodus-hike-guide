@@ -4,7 +4,6 @@
 [ ] Add links and credit to the trails API (see their terms of use)
 [ ] Add info to about page
   [ ] Include links to our githubs/portfolios
-[ ] Add search function for different locations
 [ ] Decide what else should go on the main page (content between jumbotron and hike tiles)
 [ ] Modal
   [ ] Decide and display weather info we want
@@ -13,6 +12,7 @@
 [ ] Google maps - integrate Josh's pimp gmap set-up
 
 ## Low-priority
+[ ] Add search function for different locations
 [ ] Refactor code
 [ ] Add commentary to code
 [ ] Clean up Readme before final commit
