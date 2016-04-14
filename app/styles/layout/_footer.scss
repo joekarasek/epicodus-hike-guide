@@ -1,15 +1,4 @@
-
-$large-screen: em(860) !default;
 .footer-2 {
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $footer-background: #485620;
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
-
   background: $footer-background;
   display: inline-block;
   padding: $base-spacing;

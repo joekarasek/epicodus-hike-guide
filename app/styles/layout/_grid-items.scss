@@ -3,47 +3,10 @@
 }
 
 .grid-items {
-  $action-color: #477DCA !default;
-  $base-background-color: white !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $grid-items-background: $base-background-color;
-  $grid-item-background: desaturate($action-color, 30%);
-  $grid-item-colors:
-    #F5CB38,
-    #DD8D22,
-    #CE6D22,
-    #8F5503,
-    #778D3A,
-    #485620,
-    #C4D07A,
-    #F5CB38,
-    #DD8D22,
-    #CE6D22,
-    #8F5503,
-    #778D3A,
-    #485620,
-    #C4D07A,
-    #F5CB38,
-    #DD8D22,
-    #CE6D22,
-    #8F5503,
-    #778D3A,
-    #485620,
-    #C4D07A,
-    #F5CB38,
-    #DD8D22,
-    #CE6D22,
-    #8F5503;
-  $grid-item-border-size: 9px;
-  $grid-item-columns: 4;
-  $grid-item-big-columns: 8;
-  $grid-item-color: white;
-  $grid-item-height: 14em;
-
   @include clearfix;
 
   .grid-item {
+    @extend %center;
     background: $grid-item-background;
     border-bottom: $grid-item-border-size solid $grid-items-background;
     border-left: ($grid-item-border-size / 2) solid $grid-items-background;
@@ -55,7 +18,6 @@
     outline: none;
     overflow: hidden;
     padding: 2em;
-    text-align: center;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     width: 100%;
@@ -119,11 +81,8 @@
   }
 
   .grid-item-image {
-    background: url("https:
-//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
+    @include backgroundImg("https:
+//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png", $backPos: top, $backRep: no-repeat, $backSize: cover);
     background-color: $grid-item-background;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
