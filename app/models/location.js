@@ -9,5 +9,5 @@ export default Model.extend({
   lon: attr(),
   // image: attr(),
   description: attr(),
-  directions: attr()
+  directions: attr(),
 });
