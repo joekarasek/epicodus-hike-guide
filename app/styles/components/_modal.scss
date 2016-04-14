@@ -30,7 +30,7 @@
     background: -webkit-linear-gradient(#F5CB38, #8F5503);
     background: -o-linear-gradient(#CE6D22, #8F5503);
     @media (max-width: 716px) {
-      height: 45vh;
+      height: 48vh;
     }
 }
 .close {
@@ -53,4 +53,24 @@
 }
 .close:hover {
     background: #CE6D22;
+}
+
+.descriptionTile {
+  @media (max-width: 716px) {
+    display: none;
+  }
+}
+.directions {
+  display: none;
+
+  @media (max-width: 716px) {
+    display: block;
+    a {
+      text-decoration: none;
+      color: #4D1E00;
+    }
+  }
+}
+.distance {
+  color: #4D1E00;
 }
