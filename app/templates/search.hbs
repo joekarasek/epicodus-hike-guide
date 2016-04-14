@@ -1,0 +1,48 @@
+{{#scroll-to href='#destination' label="destination"}}<span class="headerButton hvr-hang">Begin Your Adventure</span> {{/scroll-to}}
+
+<div class="hikeContainer">
+  <div class="containingHike">
+    <div class="hike1">
+    </div>
+    <div class="hike2">
+    </div>
+    <div class="hike3">
+    </div>
+  </div>
+</div>
+<div class="shinyContainer">
+  <div class="shiny1">
+    <img src="/assets/img/nature.png" alt="icon of a tree" />
+    <h2>Hiking Destinations</h2>
+    <p>Blizzard esatto havaianas crawdads toad imlay canyon gear never summer red feather scott seven2 sporthill topeak trager.</p>
+  </div>
+  <div class="shiny2">
+    <img src="/assets/img/tool.png" alt="icon of a tent" />
+    <h2>Take a Hike</h2>
+    <p>Airboard beal bear vault buck knives demon snow edelweiss eureka imlay canyon gear katadyn lib technologies naxo nrs pacific outdoor equipment paha que thule vans western mountaineering.</p>
+  </div>
+  <div class="shiny3">
+    <img src="/assets/img/hikeShoes.png" alt="icon of a sun" />
+    <h2>Hiking Essentials</h2>
+    <p>Barograph daily mean density drizzle echo gradient wind gulf stream hurricane watch low level jet (llj) nexrad palouser parhelion pascal rip current snow level.</p>
+  </div>
+</div>
+
+<div id="destination" class="mainContent">
+  <center>
+    <h1>Your Journey Awaits</h1>
+    <form class="search-bar" role="search">
+      <input type="search" placeholder="Enter Your Destination" />
+      <button type="submit">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png" alt="Search Icon">
+      </button>
+    </form>
+  </center>
+  <br><br>
+  <div class="grid-items">
+    {{#each model.places as |place index|}}
+      {{hike-tile place=place index=index}}
+    {{/each}}
+  </div>
+</div>
+<center>{{#scroll-to href='#top'}}Return to Top{{/scroll-to}}</center><br><br>
