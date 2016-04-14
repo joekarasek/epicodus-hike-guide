@@ -1,7 +1,10 @@
 <div>	<a href="#close" title="Close" class="close">X</a>
 
-  <h3>Distance: {{distance place.lat place.lon}} miles</h3>
+  <span class="distance">
+    <h3>Distance: {{distance place.lat place.lon}} miles</h3>
+  </span>
   <h1>{{place.name}}</h1>
+
   <h5> has {{place.weather.weather.firstObject.description}} and the wind is {{place.weather.wind.speed}} mph.</h5>
 
   <h2>{{temp-convert place.weather.main.temp}}</h2>
@@ -12,4 +15,14 @@
 
   <p>{{place.description}}</p>
   <p>{{location-tile place=place}}</p>
+
+  <h2>{{temp-convert place.weather.main.temp}}</h2>
+    <span class="descriptionTile">
+      <p>{{place.description}}</p>
+
+      <p>{{location-tile place=place}}</p>
+    </span>
+    <span class="directions">
+      <a href="https://maps.google.com?saddr=Current+Location&daddr={{place.lat}},{{place.lon}}">Tap for Directions</a>
+    </span>
 </div>

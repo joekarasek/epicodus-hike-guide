@@ -84,6 +84,9 @@
   width: 200px;
   font-weight: bold;
   border-radius: .4em;
+  @media (max-width: 716px) {
+    display: none;
+  }
   &:hover {
     cursor: pointer;
     float: left;
