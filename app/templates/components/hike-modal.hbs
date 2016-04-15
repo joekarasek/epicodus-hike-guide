@@ -3,8 +3,8 @@
   <span class="distance">
     <h3>Distance: {{distance place.lat place.lon}} miles</h3>
   </span>
-  <h1>{{place.name}}</h1>
 
+  <h1>{{place.name}}</h1>
   <p> has {{place.weather.weather.firstObject.description}} and the wind is {{place.weather.wind.speed}} mph.</p><br>
 
   <span class="joshSucks">
@@ -12,11 +12,11 @@
     <a target="_blank"  href="http://forecast.weather.gov/MapClick.php?lat={{place.lat}}&lon={{place.lon}}&site=okx&unit=0&lg=en&FcstType=text">Click for Forecast of Today</a><br><br>
   </span>
 
-    <span class="descriptionTile">
-      <p>{{place.description}}</p>
-      <p>{{location-tile place=place}}</p>
-    </span>
-    <span class="directions">
-      <a href="https://maps.google.com?saddr=Current+Location&daddr={{place.lat}},{{place.lon}}">Tap for Directions</a>
-    </span>
+  <span class="descriptionTile">
+    <p>{{place.description}}</p>
+    <p>{{location-tile place=place}}</p>
+  </span>
+  <span class="directions">
+    <a href="https://maps.google.com?saddr=Current+Location&daddr={{place.lat}},{{place.lon}}">Tap for Directions</a>
+  </span>
 </div>
