@@ -24,7 +24,7 @@ module.exports = function(environment) {
     ENV.weatherApi = process.env.weatherApiKey;
     ENV['g-map'] = {
       libraries: ['places', 'geometry'],
-      key: 'AIzaSyAvT6EAqWu-ooOiS8ymMzGTHqfCwkBtKaE',
+      key: process.env.gmapApiKey,
       protocol: 'https'
     }
     // ENV.APP.LOG_RESOLVER = true;
