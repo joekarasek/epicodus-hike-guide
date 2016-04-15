@@ -35,9 +35,9 @@ This project was put together as a three day capstone project to the Level 2 Jav
   * Your .env file will need to look like this...
 
 
-    export trailApiKey="TRAIL API KEY HERE"
-    export weatherApiKey="WEATHER API KEY HERE"
-    export gmapApiKey="GOOGLE MAPS API KEY HERE"
+    export trailApiKey="TRAIL API KEY HERE"  
+    export weatherApiKey="WEATHER API KEY HERE"  
+    export gmapApiKey="GOOGLE MAPS API KEY HERE"  
 
 
 * Install dependencies.
