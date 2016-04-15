@@ -81,8 +81,11 @@
   }
 
   .grid-item-image {
-    @include backgroundImg("https:
-//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png", $backPos: top, $backRep: no-repeat, $backSize: cover);
+    @include backgroundImg("/assets/img/forest.png", $backPos: top, $backRep: no-repeat, $backSize: cover);
+    background-color: $grid-item-background;
+  }
+  .grid-item-image2 {
+    @include backgroundImg("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png", $backPos: top, $backRep: no-repeat, $backSize: cover);
     background-color: $grid-item-background;
   }
 }
