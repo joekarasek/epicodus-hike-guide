@@ -28,14 +28,16 @@ This project was put together as a three day capstone project to the Level 2 Jav
 
 ### Installation
 
-* This application requires two [API keys](https://en.wikipedia.org/wiki/Application_programming_interface_key) to work. You will need to obtain these keys and place them in the file `/.env`.
+* This application requires three [API keys](https://en.wikipedia.org/wiki/Application_programming_interface_key) to work. You will need to obtain these keys and place them in the file `/.env`.
   * To obtain a TrailAPI key visit https://market.mashape.com/trailapi/trailapi. You may have to signup but dont worry, it's free!
+  * The third is a Google Maps API key and you can get that here: https://developers.google.com/maps/signup
   * Visit http://openweathermap.org/ and signup to get a weather API key (also free).
   * Your .env file will need to look like this...
 
 
     export trailApiKey="TRAIL API KEY HERE"
     export weatherApiKey="WEATHER API KEY HERE"
+    export gmapApiKey="GOOGLE MAPS API KEY HERE"
 
 
 * Install dependencies.
