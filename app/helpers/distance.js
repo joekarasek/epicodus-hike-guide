@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export function distance(params/*, hash*/) {
+  // Shows the distance from Portland to the hiking location
   var lat1 = params[0];
   var lon1 = params[1];
   var lat2 = 45.5231;
