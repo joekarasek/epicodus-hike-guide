@@ -1,7 +1,7 @@
 $(document).ready(function() {
   setTimeout(function(){
       $('body').addClass('loaded');
-  }, 3000);
+  }, 5000);
   $(window).scroll( function(){
     /* Check the location of each desired element */
     $('.hideme').each( function(i){
